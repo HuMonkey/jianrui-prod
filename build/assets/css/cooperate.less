@@ -1,0 +1,481 @@
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+address,
+big,
+code,
+del,
+dfn,
+em,
+img,
+q,
+s,
+samp,
+small,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  margin: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-align: center;
+  line-height: 1.6;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+small {
+  font-size: 80%;
+}
+figure {
+  margin: 1em 40px;
+}
+img {
+  border-style: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+[hidden] {
+  display: none;
+}
+[clear] {
+  clear: both;
+}
+/* Box Model */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: PingFang SC, miui, system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif !important;
+}
+/* A better looking default horizontal rule */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+.pc .footer {
+  width: 100%;
+  height: 102px;
+  background: #2962b6;
+  color: white;
+  font-size: 14px;
+  padding-top: 28px;
+  font-weight: 400;
+}
+.pc .footer .top {
+  width: 995px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  opacity: 0.8;
+}
+.pc .footer .bottom {
+  margin-top: 18px;
+  text-align: center;
+  opacity: 0.8;
+}
+.pc .header {
+  width: 100%;
+  height: 70px;
+  background: white;
+  position: relative;
+  z-index: 9999;
+}
+.pc .header .inner {
+  width: 995px;
+  height: 100%;
+  line-height: 70px;
+  margin: auto;
+  padding: 0 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pc .header .inner .logo {
+  width: 135px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.pc .header .inner .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pc .header .inner .tabs .item {
+  float: left;
+  font-size: 16px;
+  color: #454545;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+.pc .header .inner .tabs .item.active {
+  background: #2962b6!important;
+  color: white;
+}
+.pc .header .inner .tabs .item:hover {
+  background: #dddddd;
+}
+.pc .header .inner .tabs .productsTab {
+  position: relative;
+}
+.pc .header .inner .tabs .productsTab .list {
+  width: 100%;
+  top: 70px;
+  left: 0;
+  background: #ffffff;
+  display: none;
+  position: absolute;
+}
+.pc .header .inner .tabs .productsTab .list .sitem {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+.pc .header .inner .tabs .productsTab .list .sitem.active {
+  color: #2962b6;
+  font-weight: bold;
+}
+.pc .header .inner .tabs .productsTab .list .sitem:hover {
+  background: #dddddd;
+}
+.pc .header .inner .tabs .productsTab:hover .list {
+  display: block;
+}
+.pc .banner {
+  width: 100%;
+  height: 287px;
+  background-image: url(//static.hotelpal.cn/jianrui/0.0.3/assets/img/banner-cooperate.1671032.jpg);
+  background-position: center 580px;
+  background-size: 1920px auto;
+}
+.mobile .container {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.mobile .container .main {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  left: 0;
+}
+.mobile .container .main .navbar {
+  background: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.4rem;
+  height: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-bottom: solid thin #efefef;
+}
+.mobile .container .main .navbar .logo {
+  width: 2.93333rem;
+  position: relative;
+  top: 0.1rem;
+}
+.mobile .container .main .navbar .toggler {
+  width: 0.6rem;
+}
+.mobile .container .main .mfooter {
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: white;
+  font-size: 0.36rem;
+  background: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.mobile .container .navs {
+  width: 6rem;
+  background: #666666;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -6rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding-top: 1rem;
+  overflow: hidden;
+  padding-top: 0.8rem;
+  z-index: 999;
+}
+.mobile .container .navs .row,
+.mobile .container .navs .subrow {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.5rem;
+  text-align: left;
+  color: #aaaaaa;
+  padding: 0 0.6rem;
+  position: relative;
+  left: -375px;
+}
+.mobile .container .navs .row a,
+.mobile .container .navs .subrow a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.mobile .container .navs .subrow {
+  margin-left: 0.6rem;
+  font-size: 0.46rem;
+  line-height: 0.8rem;
+  height: 0.8rem;
+}
+@media (max-width: 768px) {
+  .pc {
+    display: none!important;
+  }
+  .mobile {
+    display: block!important;
+  }
+}
+body {
+  background: #ffffff;
+}
+.pc .main {
+  width: 995px;
+  margin: auto;
+}
+.pc .main .title {
+  color: #0d0d0d;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 38px;
+  line-height: 1;
+  margin-bottom: 25px;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+}
+.pc .main .enterprise {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.pc .main .enterprise .item {
+  vertical-align: middle;
+  margin: 0 4px;
+}
+.pc .main .text {
+  text-align: justify;
+  color: #0d0d0d;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.pc .main .img {
+  margin-top: 56px;
+  margin-bottom: 70px;
+}
+.mobile {
+  display: none;
+}
+.mobile .container .main .sheader {
+  width: 100%;
+}
+.mobile .container .main .sheader img {
+  width: 100%;
+}
+.mobile .container .main .stitle {
+  font-size: 0.42rem;
+  text-align: center;
+  color: #0d0d0d;
+  padding-top: 0.4rem;
+  font-weight: bold;
+}
+.mobile .container .main .slist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.4rem 0.82rem;
+}
+.mobile .container .main .slist .item {
+  max-height: 0.84rem;
+  margin: 0.2rem;
+}
+.mobile .container .main .stext {
+  padding: 0 0.82rem;
+  font-size: 0.27777rem;
+  color: #0d0d0d;
+  text-align: justify;
+}
+.mobile .container .main .city {
+  padding: 0 0.82rem;
+  margin-top: 0.4rem;
+}
+.mobile .container .main .city img {
+  width: 100%;
+}

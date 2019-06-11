@@ -1,0 +1,166 @@
+@import "../../assets/css/common.less";
+
+@contentWidth: 995px;
+
+body {
+    background: #ffffff;
+}
+
+.pc {
+    .main {
+        width: 100%;
+        padding-top: 30px;
+        .introduce {
+            width: 100%;
+            height: 370px;
+            margin-bottom: 50px;
+            .sheader {
+                width: 100%;
+                height: 58px;
+            }
+            .content {
+                width: @contentWidth;
+                margin: auto;
+                height: 317px;
+                background-image: url('../../assets/img/bussiness-bg.png');
+                background-size: auto 660px;
+                background-position: center center;
+                position: relative;
+                margin-top: -1px;
+                padding-left: 510px;
+                padding-top: 82px;
+                padding-right: 30px;
+                img {
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                .stitle {
+                    text-align: left;
+                    font-size: 18px;
+                    color: #0d0d0d;
+                    line-height: 1;
+                    margin-bottom: 30px;
+                }
+                .scontent {
+                    text-align: left;
+                    font-size: 14px;
+                    color: #0d0d0d;
+                    line-height: 1.8;
+                }
+            }
+        }
+        .examples {
+            width: @contentWidth;
+            margin: auto;
+            .row {
+                width: 100%;
+                height: 219px;
+                display: inline-block;
+                margin-bottom: 50px;
+                .item {
+                    width: 309px;
+                    height: 219px;
+                    float: left;
+                    margin-right: 33px;
+                    background: #bbbbbb;
+                    position: relative;
+                    background-repeat: no-repeat;
+                    .tag {
+                        width: 75px;
+                        height: 25px;
+                        position: absolute;
+                        right: 6px;
+                        bottom: 7px;
+                        background: #2962b6;
+                        color: white;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 25px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                .e1 {
+                    background-image: url('../../assets/img/example/1.jpg');
+                    background-position: center -32px;
+                }
+                .e2 {
+                    background-image: url('../../assets/img/example/2.jpg');
+                }
+                .e3 {
+                    background-image: url('../../assets/img/example/3.jpg');
+                }
+                .e4 {
+                    background-image: url('../../assets/img/example/4.jpg');
+                    background-position: -31px -20px;
+                }
+                .e5 {
+                    background-image: url('../../assets/img/example/5.jpg');
+                    background-position: -44px 0;
+                }
+                .e6 {
+                    background-image: url('../../assets/img/example/6.jpg');
+                    background-position: -29px -3px;
+                }
+            }
+        }
+    }
+}
+
+.mobile {
+    display: none;
+    .container {
+        .main {
+            .sheader {
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .map {
+                width: 100%;
+                padding: 0.63rem 0.82rem 0.35rem 0.82rem;
+                img {
+                    width: 100%;
+                }
+            }
+            .stitle {
+                color: #0d0d0d;
+                text-align: center;
+                font-size: 0.42rem;
+                padding-top: 0.4rem;
+                font-weight: bold;
+            }
+            .stext {
+                color: #0d0d0d;
+                text-align: justify;
+                font-size: 0.27777rem;
+                padding: 0 0.82rem;
+                margin-top: 0.3rem;
+            }
+            .product {
+                margin-top: 0.5555rem;
+                padding: 0 0.82rem;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                .label {
+                    width: 2.018rem;
+                    height: 0.684rem;
+                    line-height: 0.684rem;
+                    font-size: 0.4rem;
+                    text-align: center;
+                    color: white;
+                    position: absolute;
+                    right: 1.2rem;
+                    bottom: 0.6rem;
+                    background: #2d64b3;
+                }
+            }
+        }
+    }
+}

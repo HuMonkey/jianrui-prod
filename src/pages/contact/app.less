@@ -1,0 +1,80 @@
+@import "../../assets/css/common.less";
+
+@contentWidth: 995px;
+
+body {
+    background: #ffffff;
+}
+
+.pc {
+    .main {
+        width: 100%;
+        padding-top: 38px;
+        .sheader {
+            width: @contentWidth;
+            height: 50px;
+            margin: auto;
+            background-image: url('../../assets/img/contact-header.png');
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        .cards {
+            width: @contentWidth;
+            height: 373px;
+            margin: auto;
+            overflow: hidden;
+            margin-bottom: 90px;
+            .col {
+                width: 450px;
+                height: 373px;
+                float: left;
+                margin-right: 10px;
+                .card1 {
+                    width: 450px;
+                    height: 183px;
+                    background-color: #efefd7;
+                    margin-bottom: 10px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .card3 {
+                    width: 450px;
+                    height: 183px;
+                    overflow: hidden;
+                    display: inline-block;
+                    img {
+                        margin-top: -20px;
+                    }
+                }
+            }
+            
+            .card2 {
+                float: left;
+                width: 535px;
+                height: 373px;
+            }
+        }
+    }
+    
+}
+
+.mobile {
+    display: none;
+    .container {
+        .main {
+            .sheader {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .info, .map {
+                padding: 0.4rem 0.82rem;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
