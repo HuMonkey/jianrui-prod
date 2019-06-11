@@ -13,7 +13,7 @@ const navToggle = function() {
             $('.navs').css({
                 right: '0'
             });
-            setTimeout(() => {
+            setTimeout(function() {
                 $('.navs .row, .navs .subrow').animate({
                     left: '0'
                 }, 200);
